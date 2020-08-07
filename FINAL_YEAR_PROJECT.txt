@@ -26,11 +26,16 @@ Pages:
 8. contact
 9. feedback(rating)
 
+# Admin Side Layout:
+->Dashboard: Order Status((Accept,Cancelled(Notify if later available)),Paid,Ready,Picked up) , Top Seller, Today's Total Revenue, Revenue/Day Graph, Orders/Hour Graph
+->Edit Menu:  
+
 # Admin Side Modules
  
 1) QR code Scanner
 2) Email/Message Sender(on successful Regestration)
-3) 
+3) Auth0 Api
+
 
 
 
