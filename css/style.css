@@ -482,14 +482,16 @@ button:focus{
 .tz-gallery .lightbox img {
     width: 100%;
     transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 13px rgba(214,81,6,0.4);
+	border-radius: 10px;
 }
 .tz-gallery .lightbox img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+	
+    box-shadow: 0 8px 15px rgb(0,0,0,0.5);
 }
 .tz-gallery .lightbox{
-	border: 3px solid #d65106;
+	border: 0px solid #d65106;
 	display: inline-block;
 	margin-bottom: 30px;
 }
