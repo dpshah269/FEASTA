@@ -1,0 +1,43 @@
+Project :
+
+languages and technologies : Html5,css3,Django or PHP,Bootstrap4,React,MYSQL/SQLlite3,Python.
+
+MODULE 1: (common fo both)
+ (a)Login: Username and password + captcha code(optional)
+ (b)Registration : First name,Last name,Mail,Phone number,Password,confirm password,OTP.
+
+method: Databse entry(for both),Check for validation, Password, (both)Authentication, Forgot password. 
+
+# Client Side
+1=Name of website
+final cart
+2=most: caraousel......................................:)))))))))))))))) 
+3=MODULE 2:(a)navigation bar(jain,regular(full dish,breakfast,beverages,Fast food,Ice cream)) 
+4 = Menu(picture,name,price,Rating:)
+
+Pages:
+1. homepage
+2. menu
+3. cart
+4. payment receipt(Approx arrival time)
+5. upi/paytm(redirect, token generation)
+6. login
+7. register
+8. contact
+9. feedback(rating)
+
+# Admin Side Layout:
+->Dashboard: Order Status((Accept,Cancelled(Notify if later available)),Paid,Ready,Picked up) , Top Seller, Today's Total Revenue, Revenue/Day Graph, Orders/Hour Graph
+->Edit Menu:  
+
+# Admin Side Modules
+ 
+1) QR code Scanner
+2) Email/Message Sender(on successful Regestration)
+3) Auth0 Api
+
+
+
+
+ 
+ 

@@ -136,7 +136,7 @@ blockquote {
 
 ul, li, ol{
 	list-style: none;
-	margin: 0px;
+	margin: 2px;
 	padding: 0px;
 }
 button:focus{
@@ -218,7 +218,7 @@ button:focus{
 	height: 100vh;
 }
 .slides-navigation a {
-	background: #d65106;
+	
     position: absolute;
     height: 50px;
     width: 50px;
@@ -230,12 +230,17 @@ button:focus{
 	line-height: 63px;
 	text-align: center;
     transition: all .3s ease-in-out;
+	margin-left: 2px;
+	
 }
 .slides-navigation a i{
 	font-size: 40px;
 }
 .slides-navigation a:hover {
-	background: #010101;
+	background: #d65106;
+	height: 50px;
+    width: 60px;
+	
 }
 .cover-slides .container{
 	height: 100%;
@@ -305,7 +310,8 @@ button:focus{
 	color: #fff;
 }
 .slides-pagination a{
-	border: 2px solid #ffffff;
+	border: 1px solid #ffffff;
+	height: 12px;
 }
 .slides-pagination a.current{
 	background: #d65106;
@@ -408,6 +414,7 @@ button:focus{
 }
 .inner-menu-box .nav-pills .nav-link{
 	font-size: 18px;
+	margin: 2px;
 }
 .inner-menu-box .nav-pills .nav-link:hover{
 	background: #d65106;
@@ -475,14 +482,16 @@ button:focus{
 .tz-gallery .lightbox img {
     width: 100%;
     transition: 0.2s ease-in-out;
-    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 13px rgba(214,81,6,0.4);
+	border-radius: 10px;
 }
 .tz-gallery .lightbox img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+	
+    box-shadow: 0 8px 15px rgb(0,0,0,0.5);
 }
 .tz-gallery .lightbox{
-	border: 3px solid #d65106;
+	border: 0px solid #d65106;
 	display: inline-block;
 	margin-bottom: 30px;
 }
