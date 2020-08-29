@@ -2532,18 +2532,18 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    background-color: #e25d12;
+    background-color: var(--feastasec);
     /*background-image: linear-gradient(75deg,#d65106,#d65106);*/
     background-size: cover;
 	color: white;
-	border-color: #ef7e1d;
+	border-color: var(--feasta);
 	transition:0.5s
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color:#ef7e1d;
-    border-color: #e25d12
+    background-color:var(--feasta);
+    border-color: var(--feastasec)
 }
 
 .btn-primary.focus,
@@ -9938,12 +9938,12 @@ button.bg-dark:hover {
 }
 
 .text-primary {
-    color: #06b2bb!important
+    color: var(--feastasec)!important
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #224abe!important
+    color: var(--feasta)!important
 }
 
 .text-secondary {
@@ -9956,7 +9956,7 @@ a.text-secondary:hover {
 }
 
 .text-success {
-    color: #fdd219!important
+    color: #1cc88a!important
 }
 
 a.text-success:focus,
@@ -9965,16 +9965,16 @@ a.text-success:hover {
 }
 
 .text-info {
-    color: #f78828!important
+    color: #36b9cc!important
 }
 
 a.text-info:focus,
 a.text-info:hover {
     color: #258391!important
 }
-
+ 
 .text-warning {
-    color: #fa5456!important
+    color: #f6c23e!important
 }
 
 a.text-warning:focus,
@@ -10221,8 +10221,8 @@ a:focus {
 .sidebar .nav-item .collapse {
     -webkit-animation-name: growIn;
     animation-name: growIn;
-    -webkit-animation-duration: .2s;
-    animation-duration: .2s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
     -webkit-animation-timing-function: transform cubic-bezier(.18, 1.25, .4, 1), opacity cubic-bezier(0, 1, .4, 1);
     animation-timing-function: transform cubic-bezier(.18, 1.25, .4, 1), opacity cubic-bezier(0, 1, .4, 1)
 }
@@ -10248,8 +10248,8 @@ a:focus {
 .animated--fade-in {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
-    -webkit-animation-duration: .2s;
-    animation-duration: .2s;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
     -webkit-animation-timing-function: opacity cubic-bezier(0, 1, .4, 1);
     animation-timing-function: opacity cubic-bezier(0, 1, .4, 1)
 }
@@ -10292,13 +10292,13 @@ a:focus {
 
 .bg-gradient-light {
     background-color: #f8f9fc;
-    background-image: linear-gradient(180deg, #f8f9fc 10%, #c2cbe5 100%);
+    background-image: linear-gradient(-45deg, #f8f9fc, #f1eae3, #f8f9fc);
     background-size: cover
 }
 
 .bg-gradient-dark {
     background-color: #5a5c69;
-    background-image: linear-gradient(180deg, #5a5c69 10%, #373840 100%);
+    background-image: linear-gradient(180deg, #5a5c69 10%, #403d37 100%);
     background-size: cover
 }
 
@@ -11624,3 +11624,47 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
 }
+
+@media (min-width: 992px) {
+    .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform:translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  } 
