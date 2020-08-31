@@ -5,7 +5,7 @@ function changeVal(el) {
   var price = parseFloat(el.parent().children(".price").html());
   var eq = Math.round(price * qt * 100) / 100;
   
-  el.parent().children(".full-price").html( eq + "€" );
+  el.parent().children(".full-price").html( eq + "Rs" );
   
   changeTotal();            
 }
@@ -21,7 +21,7 @@ function changeTotal() {
   price = Math.round(price * 100) / 100;
   var tax = Math.round(price * 0.05 * 100) / 100
   var shipping = parseFloat($(".shipping span").html());
-  var fullPrice = Math.round((price + tax + shipping) *100) / 100;
+  var fullPrice = Math.round((price + tax ) *100) / 100;//+ shipping
   
   if(price == 0) {
     fullPrice = 0;
