@@ -19,8 +19,8 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/favicon.ico"/>
-  
 
 </head>
 
@@ -351,142 +351,126 @@
 
           <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-center m-1" style="text-align: center;">
-          <h1 class="h3 mb-0 text-gray-800">Edit Menu</h1>
+          <h1 class="h3 mb-0 text-gray-800">Add Menu</h1>
 
           <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
         </div>
         <hr width="85%">
 
         <!-- Main Page Content -->
-        <div class="mr-4 ml-4 mb-2 mt-2">
-          <div class="card shadow mb-4">
-            <div class="card-body pt-2">
-              <!--Top of the table-->
-              <div class="d-inline-flex flex-row w-100 justify-content-between align-items-center h-100 mb-2">
-                <div class="btn-group dropright">
-                  <button class="btn btn-primary dropdown-toggle badge-pill ml-3 shadow" type="button"
-                    id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Catagory
-                  </button>
-                  <div class="dropdown-menu animate slideIn bg-gradient-light"
-                    aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">All</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Fast Food</a>
-                    <a class="dropdown-item" href="#">Beverages</a>
-                    <a class="dropdown-item" href="#">South Indian</a>
-                    <a class="dropdown-item" href="#">Pujabi</a>
-                    <a class="dropdown-item" href="#">Gujarati</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="Add-category.html">Add/Edit Catagories</a>
+        
+<div class="col-xl-12 col-md-12">
+          <div class="ms-panel ms-panel-fh">
+            <div class="ms-panel-header">
+              <h6>Add Product Form</h6>
+            </div>
+            <div class="ms-panel-body">
+              <form class="needs-validation clearfix" novalidate="">
+                <div class="form-row">
+                  <div class="col-md-12 mb-3">
+                    <label for="validationCustom18">Product Name</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="validationCustom18" placeholder="Product Name" value="Pizza" required="">
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mb-3">
+                    <label for="validationCustom22">Select Catagory</label>
+                    <div class="input-group">
+                      <select class="form-control" id="validationCustom22" required="">
+                        <option value="">Catagory 1</option>
+                        <option value="">Catagory 2</option>
+                        <option value="">Catagory 3</option>
+                        <option value="">Catagory 4</option>
+
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a Catagory.
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom24">Quantity</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="validationCustom24" placeholder="01" required="">
+                      <div class="invalid-feedback">
+                        Quantity
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom25">Price</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="validationCustom25" placeholder="Rs.10" required="">
+                      <div class="invalid-feedback">
+                        Price
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <label for="validationCustom12">Description</label>
+                    <div class="input-group">
+                      <textarea rows="5" id="validationCustom12" class="form-control" placeholder="Message" required=""></textarea>
+                      <div class="invalid-feedback">
+                        Please provide a message.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <label for="validationCustom12">Product Image</label>
+                    <div class="ml-2 col-sm-6">
+  <div id="msg"></div>
+  <form method="post" id="image-form">
+    <input type="file" name="img[]" class="file" accept="image/*">
+    <div class="input-group my-3">
+      <input type="text" class="form-control" disabled placeholder="Upload File" id="file">
+      <div class="input-group-append">
+        <button type="button" class="browse btn btn-primary">Browse...</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="ml-2 col-sm-6">
+  <img src="https://placehold.it/80x80" id="preview" class="img-thumbnail">
+</div>
                   </div>
                 </div>
-				<a href="Add-Item.html">
-					<Button type="button" class="btn btn-success badge-pill m-1 mr-3 shadow" style="width: 120px;">+ Add
-					  Item</Button>
-				</a>
-              </div>
+				<div class="ms-panel-header new" style="
+    display: flex;
+    
+    align-items: center;
+	position: relative;
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+">
+                  <p class="medium" style="font-size:20px;">Status Available</p>
+                  <label class="switch" style="margin-left:40px;">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+                </div>
+				
+				<div class="ms-panel-header new">
+                
+                  <button class="btn btn-primary d-block" type="submit">Save and Add</button>
+                </div>
 
-              <div class="table-responsive">
-                <table class="table table-hover text-capitalize">
-                  <thead class="thead-dark text-center">
-                    <tr>
-                      <th scope="col" width="5%">Id</th>
 
-                      <th scope="col" colspan="2" width="35%">Item</th>
-                      <th scope="col" width="20%">Price</th>
-                      <th scope="col" class="text-right" width="30%"></th>
 
-                    </tr>
-                  </thead>
-                  <tbody class="text-center mb-1 mt-1 align-middle">
-                    <tr class="">
-                      <th scope="row" class="align-middle">1</th>
-                      <td class="align-middle text-right" width="15%"><img src="img\Burger.jpg" class="img-fluid shadow"
-                          style="max-width: 60px ;min-width: 50px;" /> </td>
-                      <td class="align-middle">Burger</td>
-                      <td class="align-middle">60Rs</td>
-                      <td class="text-right align-middle">
-                        <Button type="button" class="btn btn-success badge-pill m-1" style="width: 80px;">Edit</Button>
-                        <Button type="button" class="btn btn-danger badge-pill m-1" style="width: 80px;"><i
-                            class="fas fa-fw fa-trash-alt"></i></Button>
-                      </td>
 
-                    </tr>
-                    <tr>
-                      <th scope="row" class="align-middle">2</th>
-                      <td class="align-middle text-right" width="15%"><img src="img\Sandwich.jpg"
-                          class="img-fluid shadow" style="max-width: 60px ;min-width: 50px;" /> </td>
-                      <td class="align-middle">Sandwich</td>
-                      <td class="align-middle">100Rs</td>
-                      <td class="text-right align-middle">
-                        <Button type="button" class="btn btn-success badge-pill m-1" style="width: 80px;">Edit</Button>
-                        <Button type="button" class="btn btn-danger badge-pill m-1" style="width: 80px;"><i
-                            class="fas fa-fw fa-trash-alt"></i></Button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row" class="align-middle">3</th>
-                      <td class="align-middle text-right" width="15%"><img src="img\Dabeli.jpg" class="img-fluid shadow"
-                          style="max-width: 60px ;min-width: 50px;" /> </td>
-                      <td class="align-middle">Dabeli</td>
-                      <td class="align-middle">20Rs</td>
-                      <td class="text-right align-middle">
-                        <Button type="button" class="btn btn-success badge-pill m-1" style="width: 80px;">Edit</Button>
-                        <Button type="button" class="btn btn-danger badge-pill m-1" style="width: 80px;"><i
-                            class="fas fa-fw fa-trash-alt"></i></Button>
-                      </td>
-                    </tr>
-                    <tr class="">
-                      <th scope="row" class="align-middle">1</th>
-                      <td class="align-middle text-right" width="15%"><img src="img\Burger.jpg" class="img-fluid shadow"
-                          style="max-width: 60px ;min-width: 50px;" /> </td>
-                      <td class="align-middle">Burger</td>
-                      <td class="align-middle">60Rs</td>
-                      <td class="text-right align-middle">
-                        <Button type="button" class="btn btn-success badge-pill m-1" style="width: 80px;">Edit</Button>
-                        <Button type="button" class="btn btn-danger badge-pill m-1" style="width: 80px;"><i
-                            class="fas fa-fw fa-trash-alt"></i></Button>
-                      </td>
+              </form>
 
-                    </tr>
-                    <tr>
-                      <th scope="row" class="align-middle">2</th>
-                      <td class="align-middle text-right" width="15%"><img src="img\Sandwich.jpg"
-                          class="img-fluid shadow" style="max-width: 60px ;min-width: 50px;" /> </td>
-                      <td class="align-middle">Sandwich</td>
-                      <td class="align-middle">100Rs</td>
-                      <td class="text-right align-middle">
-                        <Button type="button" class="btn btn-success badge-pill m-1" style="width: 80px;">Edit</Button>
-                        <Button type="button" class="btn btn-danger badge-pill m-1" style="width: 80px;"><i
-                            class="fas fa-fw fa-trash-alt"></i></Button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row" class="align-middle">3</th>
-                      <td class="align-middle text-right" width="15%"><img src="img\Dabeli.jpg" class="img-fluid shadow"
-                          style="max-width: 60px ;min-width: 50px;" /> </td>
-                      <td class="align-middle">Dabeli</td>
-                      <td class="align-middle">20Rs</td>
-                      <td class="text-right align-middle">
-                        <Button type="button" class="btn btn-success badge-pill m-1" style="width: 80px;">Edit</Button>
-                        <Button type="button" class="btn btn-danger badge-pill m-1" style="width: 80px;"><i
-                            class="fas fa-fw fa-trash-alt"></i></Button>
-                      </td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
-              </div>
             </div>
           </div>
+
         </div>
-      </div>
+	
 
-
-      <div>
-
-      </div>
+      
 
 
       <!-- End of Main Content -->
@@ -541,8 +525,8 @@
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
+  <script src="js/add-item.js"></script>
   <script src="js/sb-admin-2.min.js"></script>
-  
 
   <!-- Page level plugins -->
   <script src="vendor/chart.js/Chart.min.js"></script>
