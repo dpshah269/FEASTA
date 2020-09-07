@@ -1,0 +1,1 @@
+Feasta is a canteen management system project. It is designed to reduce student's waiting time in canteen for food ordering. Food ordering and payment will be done online. On the admin side, Admin can see orders, reports, add new item and can update it's details also. Admin can make some users as Trusted members so they can use cash on delivery option. 
